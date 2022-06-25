@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
-import CV from "../../assets/CV.pdf";
+// import CV from "../../assets/CV.pdf";
 
 
 const Navbar = () => {
@@ -25,9 +25,9 @@ const Navbar = () => {
                         </li>
                     );
                 })}
-                <a href={CV} target="_blank" className="nav_link" rel="noreferrer">
+                {/* <a href={CV} target="_blank" className="nav_link" rel="noreferrer">
                     CV
-                </a>
+                </a> */}
             </ul>
             {/* {Mobile friendly nav} */}
             <div className="nav-menu">
