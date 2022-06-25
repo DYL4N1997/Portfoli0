@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import "./Navbar.css";
+import { HiMenuAlt4, HiX } from "react-icons/hi";
+import { motion } from "framer-motion";
+import CV from "../../assets/CV.pdf";
 
 
 const Navbar = () => {
@@ -22,17 +25,38 @@ const Navbar = () => {
                         </li>
                     );
                 })}
-                <a href={CV} target="_blank" className="nav_link">
+                <a href={CV} target="_blank" className="nav_link" rel="noreferrer">
                     CV
                 </a>
             </ul>
+            {/* {Mobile friendly nav} */}
+            <div className="nav-menu">
+        {/* on click - set toggle to true (open-menu) */}
+        <HiMenuAlt4 onClick={() => setToggle(true)} />
+        {toggle && (
+          <motion.div
+            whileInView={{ x: [300, 0] }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <HiX
+              style={{ height: "35px", width: "35px", margin: "10px" }}
+              onClick={() => setToggle(false)}
+            />
 
-            
-            
-        </nav>
-    )
-
-
-
+            <ul className="nav-menu-ul">
+              {navLinks.map((item) => (
+                <li className="nav-menu-li" key={item}>
+                  <a href={`#${item}`} onClick={() => setToggle(false)}>
+                    {item}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+        )}
+      </div>       
+    </nav>
+  );
+};
 
 export default Navbar;
