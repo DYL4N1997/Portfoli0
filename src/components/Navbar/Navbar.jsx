@@ -15,11 +15,16 @@ const Navbar = () => {
                 </div>    
             </div>    
             <ul className="nav__links">
-
-            
-
-
-
+                {navLinks.map((link) => {
+                    return (
+                        <li key={link} className="nav_link">
+                            <a href={`#${link}`}>{link}</a>    
+                        </li>
+                    );
+                })}
+                <a href={CV} target="_blank" className="nav_link">
+                    CV
+                </a>
             </ul>
 
             
