@@ -2,10 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 
 :root {
-  --font-base: "DM Sans", sans-serif;
+  --font-base: "Roboto", roboto;
   --font-marker: "Permanent Marker", cursive;
   --primary-color: #040218;
-  --blue-color: #0fa5a5;
   --purple-color: #65089e;
   --pink-color: #9c03a1;
   --gray-color: #b7babe;
