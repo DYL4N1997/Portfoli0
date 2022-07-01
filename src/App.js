@@ -1,7 +1,6 @@
 import React from "react";
 
-// import { About, Header, Featured, Footer, Projects, Skills } from "./container";
-import { Navbar } from "./components";
+import Navbar from "./components/Navbar/Navbar";
 import Header from './components/Header/Header'
 import About from './components/About/About'
 import Experience from './components/Experience/Experience'
@@ -22,7 +21,7 @@ const App = () => {
       <Contact />
       <Footer />
     </>
-  )
-}
+  );
+};
 
 export default App;
