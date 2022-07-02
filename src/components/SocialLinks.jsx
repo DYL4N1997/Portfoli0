@@ -3,7 +3,7 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 const SocialLinks = () => {
     return (
-        <div className="social__icons">
+        <div className="header__socials">
             <div>
                 <a target="_blank" href="https://www.linkedin.com/in/dylan-metcalf-7595781b3/" rel="noreferrer">
                      <BsLinkedin />   
