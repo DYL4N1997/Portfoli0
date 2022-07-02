@@ -1,6 +1,6 @@
 header {
     height: 100vh;
-    padding-top: 15rem;
+    padding-top: 8rem;
     overflow: hidden;
 }
 
@@ -28,7 +28,7 @@ header {
     gap: 0.8rem;
     position: absolute;
     left: 0;
-    bottom: 3rem;
+    bottom: 1rem;
 }
 
 .header__container::after {
@@ -46,9 +46,36 @@ header {
     width: 22rem;
     height: 30rem;
     position: absolute;
-    left: calc(50% -11rem);
-    margin-top: 4rem;
+    left: calc(50% - 11rem);
+    margin-top: 0rem;
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
     padding: 5rem 1.5rem 1.5rem 1.5rem;
 ;}
+
+/* Scroll down */
+.scroll__down {
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 200;
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 1240px) {
+    header {
+        height: 68vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        height: 100vh;
+    }
+
+    .header__socials,
+    .scroll__down {
+        display: none;
+    }
+}
