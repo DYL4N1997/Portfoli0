@@ -1,0 +1,131 @@
+.nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 2rem;
+    position: fixed;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.nav__logo-container {
+    padding: 0.5rem;
+    border-radius: 50%;
+    border: 1px solid rgba(243, 240, 240, 0.349);
+}
+  
+.nav__logo-container span {
+    color: var(--pink-color);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav__links {
+    flex: 1;
+    display: flex;
+    list-style: none;
+  
+    justify-content: center;
+    align-items: center;
+}
+  
+.nav__links li {
+    cursor: pointer;
+}
+  
+.nav__links a {
+    color: var(--gray-color);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid rgba(250, 246, 246, 0);
+    transition: 0.5s ease-in-out;
+}
+  
+.nav__links a:hover {
+    transition: 0.5s ease-in-out;
+    color: var(--pink-color);
+}
+
+.nav-menu {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.nav-menu svg {
+    width: 100%;
+    height: 100%;
+    color: var(--pink-color);
+}
+  
+/* mobile navigation styling */
+.nav-menu div {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+    padding: 1rem;
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    box-shadow: 0px 0px 20px rgba(160, 158, 158, 0.15);
+}
+  
+.cross svg {
+    color: var(--pink-color);
+    width: 35px;
+    height: 35px;
+    margin: 0.5rem 1rem;
+}
+  
+.nav-menu-ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+  
+.nav-menu-li {
+    margin: 1rem;
+}
+  
+.nav-menu-li a {
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+  
+.nav-menu-li a:hover {
+    color: var(--pink-color);
+    transition: all 0.3s ease-in-out;
+}
+  
+@media screen and (max-width: 900px) {
+    .nav__links {
+      display: none;
+}
+}
+  
+@media screen and (min-width: 900px) {
+    .nav-menu {
+      display: none;
+}
+}
