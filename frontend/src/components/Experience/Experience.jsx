@@ -1,6 +1,6 @@
 import React from 'react'
 import './Experience.css'
-import { BsPatchCheck, BsPatchCheckFill } from 'react-icons/bs'
+import { BsPatchCheckFill } from 'react-icons/bs'
 
 const Experience = () => {
   return (
@@ -13,16 +13,100 @@ const Experience = () => {
           <h3>Frontend Development</h3>
           <div className="experience__content">
              <arcticle className='experience__details'>
-                <BsPatchCheckFill />
-                <h4>HTML</h4>
+                <BsPatchCheckFill className='experience__details-icon'/>
+                <div>
+                  <h4>HTML</h4>
+                  <small className='text-light'>Experienced</small>
+                </div>
+              </arcticle>
+              <arcticle className='experience__details'>
+                <BsPatchCheckFill className='experience__details-icon'/>
+                <div>
+                <h4>CSS</h4>
                 <small className='text-light'>Experienced</small>
+                </div>
+              </arcticle> 
+              <arcticle className='experience__details'>
+                <BsPatchCheckFill className='experience__details-icon'/>
+               <div>
+                <h4>Javascript</h4>
+                <small className='text-light'>Experienced</small>
+               </div>
+              </arcticle> 
+              <arcticle className='experience__details'>
+                <BsPatchCheckFill className='experience__details-icon'/>
+                <div>
+                  <h4>Bootstrap</h4>
+                  <small className='text-light'>Experienced</small>
+                </div>
+              </arcticle>
+              <arcticle className='experience__details'>
+                <BsPatchCheckFill className='experience__details-icon'/>
+                <div>
+                  <h4>Tailwind</h4>
+                  <small className='text-light'>Experienced</small>
+                </div>
+              </arcticle> 
+              <arcticle className='experience__details'>
+                <BsPatchCheckFill className='experience__details-icon'/>
+                <div>
+                  <h4>React</h4>
+                  <small className='text-light'>Experienced</small>
+                </div>
+
               </arcticle> 
           </div>
         </div>
 
+        {/* End of Frontend */}
+
         <div className="experience__backend">
-        
-        </div>  
+        <h3>Frontend Development</h3>
+          <div className="experience__content">
+             <arcticle className='experience__details'>
+                <BsPatchCheckFill className='experience__details-icon'/>
+                <div>
+                  <h4>HTML</h4>
+                  <small className='text-light'>Experienced</small>
+                </div>
+              </arcticle>
+              <arcticle className='experience__details'>
+                <BsPatchCheckFill className='experience__details-icon'/>
+                <div>
+                <h4>CSS</h4>
+                <small className='text-light'>Experienced</small>
+                </div>
+              </arcticle> 
+              <arcticle className='experience__details'>
+                <BsPatchCheckFill className='experience__details-icon'/>
+               <div>
+                <h4>Javascript</h4>
+                <small className='text-light'>Experienced</small>
+               </div>
+              </arcticle> 
+              <arcticle className='experience__details'>
+                <BsPatchCheckFill className='experience__details-icon'/>
+                <div>
+                  <h4>Bootstrap</h4>
+                  <small className='text-light'>Experienced</small>
+                </div>
+              </arcticle>
+              <arcticle className='experience__details'>
+                <BsPatchCheckFill className='experience__details-icon'/>
+                <div>
+                  <h4>Tailwind</h4>
+                  <small className='text-light'>Experienced</small>
+                </div>
+              </arcticle> 
+              <arcticle className='experience__details'>
+                <BsPatchCheckFill className='experience__details-icon'/>
+                <div>
+                  <h4>React</h4>
+                  <small className='text-light'>Experienced</small>
+                </div>
+              </arcticle> 
+          </div>
+        </div>
       </div>
     </section>
   )

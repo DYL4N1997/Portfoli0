@@ -6,6 +6,7 @@
   --font-marker: "Permanent Marker", cursive;
   --color-bg: #1f1f38;
   --color-primary: #4bd5ff;
+  --color-bg-variant: #2c2c6c;
   --color-primary-variant: rgba(77, 181, 255, 0.4);
   --primary-color: #040218;
   --purple-color: #65089e;
@@ -45,7 +46,7 @@ html {
 /* General Styles for portfolio */
 
 .container {
-  width: var (--contianer-width-lg);
+  width: var(--container-width-lg);
   margin: 0 auto;
 }
 
@@ -124,7 +125,7 @@ img {
 
 /* Media Queries (Medium Devices)*/
 
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1024px) {
   .container {
     width: var(--container-width-md);
   }
